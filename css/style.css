@@ -1,7 +1,7 @@
 main {
   padding: 2rem 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/main.jpg) top no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
   min-height: 657px;
   color: #fff;
 }
@@ -52,7 +52,8 @@ main .menu {
   text-align: center;
 }
 main .menu-item {
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   margin: 0 auto;
   height: 9rem;
   width: 14rem;
@@ -95,4 +96,45 @@ main .twree .adres .cart iframe {
 main .twree .adres p {
   font-size: 1.4rem;
   font-weight: 600;
+}
+main .twree .adres p a {
+  color: #EB691B;
+}
+main .twree .adres p a:hover {
+  color: #EB691B;
+}
+footer {
+  background-color: #272A32;
+  height: 2rem;
+  margin: 0;
+  padding: 3px 0 5px 0;
+}
+footer p {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  float: right;
+}
+footer p a {
+  color: #EB691B;
+  text-decoration: none;
+}
+@media (max-width: 726px) {
+  main h1,
+  main h2 {
+    font-size: 2.7rem;
+  }
+  main .link {
+    margin-top: 1.5rem;
+  }
+  main .contacts {
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+  }
+  main .logo {
+    text-align: center;
+  }
+  main .menu-item {
+    width: 18rem;
+  }
 }
