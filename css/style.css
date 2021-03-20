@@ -1,5 +1,5 @@
 main {
-  padding: 2rem 0;
+  padding: 2rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/main.jpg) top no-repeat;
   background-size: cover;
   min-height: 657px;
@@ -121,12 +121,16 @@ footer p a {
 }
 @media (max-width: 726px) {
   main {
+    padding: 2rem 0 1rem 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/main.jpg) center no-repeat;
     background-size: cover;
   }
   main h1,
   main h2 {
     font-size: 2.7rem;
+  }
+  main h2 {
+    padding-top: 2rem;
   }
   main .link {
     margin-top: 1.5rem;
