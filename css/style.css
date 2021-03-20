@@ -1,0 +1,98 @@
+main {
+  padding: 2rem 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/main.jpg) top no-repeat;
+  background-size: cover;
+  height: 657px;
+  color: #FFF;
+}
+main .logo img {
+  padding-top: 1.2rem ;
+  padding-bottom: 1.8rem;
+  width: 23.3rem;
+}
+main .features ul li {
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 1.31rem;
+  line-height: 1.8rem;
+  color: #FFF;
+  list-style-type: none;
+}
+main .link {
+  text-align: center;
+}
+main .link button {
+  padding-bottom: 7px;
+  background-color: #EB691B;
+  border: none;
+  width: 17rem;
+  height: 3.6rem;
+  border-radius: 10px;
+  margin-top: 0.4rem;
+}
+main .link button a {
+  font-weight: 400	;
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.3rem;
+}
+main .link button:hover {
+  background-color: #EB561B;
+}
+main .contacts {
+  text-align: center;
+  padding-top: 2.19rem;
+}
+main .contacts i {
+  margin: 0 0.3rem;
+  font-size: 1.9rem;
+}
+main .menu {
+  text-align: center;
+}
+main .menu-item {
+  padding: 2.5rem 0;
+  margin: 0 auto;
+  height: 9rem;
+  width: 14rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/seti.png) top no-repeat;
+}
+main .menu-item h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+main .menu .blud {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/bluda.jpg) center no-repeat;
+  background-size: cover;
+}
+main .menu .souse {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/souce.jpg) center no-repeat;
+  background-size: cover;
+}
+main .twree {
+  text-align: center;
+}
+main .twree img {
+  padding: 0.5rem 0 1rem 0;
+  width: 16rem;
+}
+main .twree .adres h2 {
+  margin-bottom: 1.2rem;
+}
+main .twree .adres .cart {
+  margin: 0 auto;
+}
+main .twree .adres .cart iframe {
+  filter: brightness(87%);
+  -ms-filter: brightness(87%);
+  -webkit-filter: brightness(87%);
+  -moz-filter: brightness(87%);
+  -o-filter: brightness(87%);
+}
+main .twree .adres p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
