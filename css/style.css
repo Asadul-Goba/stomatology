@@ -3,7 +3,7 @@ main {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/main.jpg) top no-repeat;
   background-attachment: fixed;
   min-height: 657px;
-  color: #FFF;
+  color: #fff;
 }
 main .logo img {
   padding-top: 1.2rem ;
