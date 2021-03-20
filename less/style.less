@@ -60,8 +60,14 @@ main{
 	}
 	.menu{
 		text-align: center;
-		&-item{
-			
+		button{
+			padding: 0;
+  			border: none;
+  			font: inherit;
+  			color: inherit;
+  			background-color: transparent;
+		}
+		button{
 			padding-top:2.5rem;
 			padding-bottom: 2.5rem;
 			margin:0 auto;
@@ -82,6 +88,42 @@ main{
 		.souse{
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)),url(../img/souce.jpg) center no-repeat;
 			background-size: cover;
+		}
+		.modal{
+
+		}
+		.recepts{
+			box-shadow: 12rem 12rem 12rem 12rem rgba(0, 0, 0, 0.7);
+			border-radius: 1rem;
+			margin: 3rem 0;
+			// min-height: 50rem;
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/modal-bg.png) center repeat;
+			
+			&-title{
+				padding-top: 1rem;
+				height: 5rem;
+				h4{
+					font-size: 2.5rem;
+				}
+			}
+			&-item{
+				margin-bottom: 2rem;
+				background-repeat: 1rem;
+				text-align: center;
+				h5{
+					font-size:30px	;
+				}
+				span{
+					font-size: 24px;
+					color:#FF561B;
+					font-weight: bold;
+				}
+				img{
+					border-radius: 1rem;
+					width: 15rem;
+				}
+			}
+
 		}
 	}
 	.twree{

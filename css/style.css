@@ -51,7 +51,14 @@ main .contacts i {
 main .menu {
   text-align: center;
 }
-main .menu-item {
+main .menu button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+main .menu button {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   margin: 0 auto;
@@ -61,7 +68,7 @@ main .menu-item {
   margin-top: 2rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/seti.png) top no-repeat;
 }
-main .menu-item h3 {
+main .menu button h3 {
   font-size: 2rem;
   line-height: 2rem;
 }
@@ -72,6 +79,36 @@ main .menu .blud {
 main .menu .souse {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/souce.jpg) center no-repeat;
   background-size: cover;
+}
+main .menu .recepts {
+  box-shadow: 12rem 12rem 12rem 12rem rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+  margin: 3rem 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/modal-bg.png) center repeat;
+}
+main .menu .recepts-title {
+  padding-top: 1rem;
+  height: 5rem;
+}
+main .menu .recepts-title h4 {
+  font-size: 2.5rem;
+}
+main .menu .recepts-item {
+  margin-bottom: 2rem;
+  background-repeat: 1rem;
+  text-align: center;
+}
+main .menu .recepts-item h5 {
+  font-size: 30px	;
+}
+main .menu .recepts-item span {
+  font-size: 24px;
+  color: #FF561B;
+  font-weight: bold;
+}
+main .menu .recepts-item img {
+  border-radius: 1rem;
+  width: 15rem;
 }
 main .twree {
   text-align: center;
