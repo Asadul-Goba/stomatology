@@ -87,6 +87,8 @@ main .twree .adres .cart {
   margin: 0 auto;
 }
 main .twree .adres .cart iframe {
+  width: 335px;
+  height: 240px;
   filter: brightness(87%);
   -ms-filter: brightness(87%);
   -webkit-filter: brightness(87%);
@@ -144,5 +146,23 @@ footer p a {
   }
   main .menu-item {
     width: 18rem;
+  }
+}
+@media (max-width: 400px) {
+  main .logo img {
+    width: 18rem;
+  }
+}
+@media (max-width: 300px) {
+  main .features ul li {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  main .logo img {
+    width: 18rem;
+  }
+  main .twree .adres .cart iframe {
+    width: 265px;
+    height: 180px;
   }
 }
