@@ -58,16 +58,31 @@ main{
 		font-size: 1.9rem;
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Все селекторы и классы и стили для МЕНЮ
+
 	.menu{
 		text-align: center;
-		button{
+		&-button{
 			padding: 0;
   			border: none;
   			font: inherit;
   			color: inherit;
   			background-color: transparent;
 		}
-		button{
+		&-button{
 			padding-top:2.5rem;
 			padding-bottom: 2.5rem;
 			margin:0 auto;
@@ -89,21 +104,45 @@ main{
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)),url(../img/souce.jpg) center no-repeat;
 			background-size: cover;
 		}
-		.modal{
-
-		}
+		.modal{	
+			width: auto;
+			border:none;
+			padding:0;
+			.close {
+				position: absolute;
+				top: -1rem;
+				right: 6rem;
+				border: none;
+				width: 3rem;
+				font-size: 4rem;
+				background-color: transparent;
+				color: #FFF;
+				text-align: center;
+				position: fixed;
+						
+			}
+			&-inner{
+			width: auto;
+			border:none;
+			padding:0;
+			}
+		}	
+		
 		.recepts{
-			box-shadow: 12rem 12rem 12rem 12rem rgba(0, 0, 0, 0.7);
+
+			// box-shadow: 12rem 12rem 12rem 12rem rgba(0, 0, 0, 0.7);
 			border-radius: 1rem;
 			margin: 3rem 0;
 			// min-height: 50rem;
-			background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/modal-bg.png) center repeat;
-			
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/modal-bg.png) center no-repeat;
+			background-attachment: fixed;
+			background-size: cover;	
+
 			&-title{
 				padding-top: 1rem;
-				height: 5rem;
+				padding-bottom: 2rem;
 				h4{
-					font-size: 2.5rem;
+					font-size: 2.8rem;
 				}
 			}
 			&-item{
@@ -126,6 +165,27 @@ main{
 
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	.twree{
 		text-align: center;
 		img{
@@ -206,8 +266,6 @@ footer{
 		
 	}	
 }
-
-
 @media(max-width:400px){
 	main{
 		.logo {

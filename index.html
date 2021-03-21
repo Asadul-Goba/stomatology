@@ -58,32 +58,27 @@
 
 					
 				</div>
-			
-<!-- 			Роллы суши горячиеблюда сеты напиткиисоусы
- -->			
-
-
  				<div class="menu col-lg-4">
 					<h1>Меню</h1>
 
-						<button href="#about-modal" data-toggle="modal" class="menu-item">
-							<h3>Роллы, суши <br> и сеты</h3>
-						</button>
+					<button href="#about-modal" data-toggle="modal" class="menu-button">
+						<h3>Роллы, суши <br> и сеты</h3>
+					</button>
 					
-
-
-						<button href="#about-modal" data-toggle="modal" class="menu-item blud">
-							<h3>Горячие блюда</h3>
-						</button>
+					<button href="#about-modal" data-toggle="modal" class="menu-button blud">
+						<h3>Горячие блюда</h3>
+					</button>
 					
-
-
-						<button href="#about-modal" data-toggle="modal" class="menu-item souse">
-							<h3>Напитки и соусы</h3>
-						</button>
-					
-					<div class="modal fade row" id="about-modal">
-						<div class="modal-conent col-lg-10 offset-lg-1">
+					<button href="#about-modal" data-toggle="modal" class="menu-button souse">
+						<h3>Напитки и соусы</h3>
+					</button>
+				
+				<div class="modal" id="about-modal">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        <span aria-hidden="true">&times;</span>
+				    </button>
+				    <div class="modal-inner row">
+						<div class="modal-contents col-lg-10 offset-lg-1">
 							<div class="recepts row">
 								<div class="recepts-title col-lg-12">
 									<h4>Сеты</h4>
@@ -359,6 +354,7 @@
 
 							</div>
 						</div>
+					</div>
 					</div>					
 				</div>
 
@@ -392,6 +388,14 @@
     			<p>Сайт разработал <a href="https://asadul-goba.github.io/Amir_Potfolio/">Amir Galimyanov</a></p>
     		</div>		
     </footer >
+    	<sccript>
+			$(document).ready(function(){
+				$('.close').on('click', function(event) {
+					event.preventDefault();
+					$('.modal').hide() 
+				});	
+			}	
+		</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="js/app.js"></script>
