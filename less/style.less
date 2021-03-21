@@ -1,14 +1,18 @@
-
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+body{
+	height: 5rem;	
+}
 main{
 	padding:2rem;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url(../img/main.jpg) top no-repeat;
 	background-size:cover;
-	
 	min-height:657px;
 	color:#fff;
 	.logo{
-
-
 		img{
 			padding-top: 1.2rem ;
 			padding-bottom: 1.8rem;
@@ -73,16 +77,14 @@ main{
 
 	// Все селекторы и классы и стили для МЕНЮ
 
-	.menu{
+	.second-column{
 		text-align: center;
-		&-button{
+		.menu-button{
 			padding: 0;
   			border: none;
   			font: inherit;
   			color: inherit;
   			background-color: transparent;
-		}
-		&-button{
 			padding-top:2.5rem;
 			padding-bottom: 2.5rem;
 			margin:0 auto;
@@ -96,15 +98,22 @@ main{
 				line-height: 2rem;
 			}
 		}
-		.blud{
+		.hot-meals{
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)),url(../img/bluda.jpg) center no-repeat;
 			background-size: cover;
+			padding: 1rem;	
 		}
-		.souse{
+		.sauces{
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)),url(../img/souce.jpg) center no-repeat;
 			background-size: cover;
 		}
+	}
+	
+
+	
+
 		.modal{	
+			text-align: center;
 			width: auto;
 			border:none;
 			padding:0;
@@ -118,23 +127,18 @@ main{
 				background-color: transparent;
 				color: #FFF;
 				text-align: center;
-				position: fixed;
-						
+				position: fixed;			
 			}
-			&-inner{
-			width: auto;
-			border:none;
-			padding:0;
-			}
+
 		}	
 		
 		.recepts{
 
-			// box-shadow: 12rem 12rem 12rem 12rem rgba(0, 0, 0, 0.7);
+			box-shadow: 1rem 1rem 3rem 3rem rgba(255,255,255, 0.1);
 			border-radius: 1rem;
 			margin: 3rem 0;
 			// min-height: 50rem;
-			background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/modal-bg.png) center no-repeat;
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/modal-bg.png) center no-repeat;
 			background-attachment: fixed;
 			background-size: cover;	
 
@@ -159,14 +163,12 @@ main{
 				}
 				img{
 					border-radius: 1rem;
-					width: 15rem;
+					width: 19rem;
 				}
 			}
+		}	
 
-		}
-	}
-
-
+		
 
 
 
@@ -186,7 +188,8 @@ main{
 
 
 
-	.twree{
+
+	.third-column{
 		text-align: center;
 		img{
 			padding: 0.5rem 0 1rem 0;
@@ -238,6 +241,19 @@ footer{
 		}
 	}
 }
+@media(min-width:1400px){
+	main{
+		padding-top: 7rem;	
+		min-height: 60rem;	
+	}
+
+
+}
+
+
+
+
+
 @media(max-width:726px){
 	main{
 		padding:2rem 0 1rem 0;

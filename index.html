@@ -3,21 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="SushiLike доставка суши, роллов Халяль в Москве. Посёлок Отрадное. СушиЛайк Доставка роллов в Москве круглосуточно 24/7 - заказать недорого роллы Халяль на дом и офис в SushiLike Москва.">
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="
   sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<title>Халяль суши роллы в Москве</title>
-	<link rel="icon" href="img/logo.jpeg">
+	<title></title>
+	<link rel="icon" href="img/logo.png">
 
 </head>
 <body>
 	<main>
 		<div class="container">
-			<div class="row">
-				<div class="column-once col-lg-4">
+			<div class="main-content row">
+
+				<!-- Первая колонка сайта - логотип, преимущества, звонок и контакты -->
+
+				<div class="first-column col-lg-4">
 					<div class="logo">
 						<img src="img/logo2.png" alt="" >
 					</div>
@@ -46,44 +51,71 @@
 							</li>
 						</ul>
 					</div>
+
 					<div class="link">
 						<button><a href="tel:+7 965 965-42-47">Заказать</a></button>
 					</div>
+
 					<div class="contacts">
 						<i class="fab fa-telegram"></i>
 						<i class="fab fa-instagram"></i>
 						<i class="fab fa-whatsapp"></i>
 						<i class="fab fa-vk"></i>
 					</div>
-
-					
 				</div>
- 				<div class="menu col-lg-4">
+
+				<!--Вторая колонка сайта - меню и модальное окно-->
+
+	 			<div class="second-column col-lg-4">
 					<h1>Меню</h1>
 
-					<button href="#about-modal" data-toggle="modal" class="menu-button">
-						<h3>Роллы, суши <br> и сеты</h3>
+					<button href="#about-modal1" data-toggle="modal" class="menu-button">
+						<h3>Роллы и сеты</h3>
 					</button>
 					
-					<button href="#about-modal" data-toggle="modal" class="menu-button blud">
-						<h3>Горячие блюда</h3>
+					<button href="#about-modal2" data-toggle="modal" class="menu-button hot-meals">
+						<h3>Суши и горячие блюда</h3>
 					</button>
 					
-					<button href="#about-modal" data-toggle="modal" class="menu-button souse">
-						<h3>Напитки и соусы</h3>
+					<button href="#about-modal3" data-toggle="modal" class="menu-button sauces">
+						<h3>Мини роллы <br> и соусы</h3>
 					</button>
-				
-				<div class="modal" id="about-modal">
+				</div>
+<!-- 				Третья колонка с картой и вторым логотипом-->
+
+				<div class="third-column col-lg-4">
+					<img src="img/logo.png" alt="">
+					<div class="adres">
+						<h2>Как нас найти</h2>
+						<div class="cart">
+							<style type="text/css">
+								.ymaps-layers-pane {
+									filter: brightness(50%);
+									-ms-filter: brightness(50%);
+									-webkit-filter: brightness(50%);
+									-moz-filter: brightness(50%);   
+									-o-filter: brightness(50%);  
+								}
+							</style>
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A509df45b6f5659d5458062a7a3b7d448b7828b3ed0a9ccc76fd41df41d005bb7&amp;source=constructor"  frameborder="0"></iframe>
+						</div>
+						<p>Посёлок Отрадное,<br>
+						ул. Пятницкая, д.12 <br>
+						<a href="tel:+7 965 965-42-47">+7 (901) 766-84-74</a></p>
+					</div>
+				</div>
+
+				<div class="modal" id="about-modal1">
 				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				        <span aria-hidden="true">&times;</span>
 				    </button>
-				    <div class="modal-inner row">
-						<div class="modal-contents col-lg-10 offset-lg-1">
+				    <div class="modal-row row">
+						<div class="modal-inner col-lg-10 offset-lg-1">
 							<div class="recepts row">
 								<div class="recepts-title col-lg-12">
 									<h4>Сеты</h4>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -91,7 +123,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -99,7 +131,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -107,7 +139,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -119,7 +151,7 @@
 								<div class="recepts-title col-lg-12">
 									<h4>Классические роллы</h4>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -127,7 +159,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -135,7 +167,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -143,7 +175,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -151,7 +183,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -159,7 +191,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -167,7 +199,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -175,7 +207,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -183,7 +215,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-12">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -195,7 +227,7 @@
 								<div class="recepts-title col-lg-12">
 									<h4>Горячие роллы</h4>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -203,7 +235,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -211,7 +243,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -219,7 +251,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -227,7 +259,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -235,7 +267,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -243,7 +275,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -251,7 +283,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -259,7 +291,147 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-12">
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+					</div>					
+				</div>
+				<div class="modal" id="about-modal2">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        <span aria-hidden="true">&times;</span>
+				    </button>
+				    <div class="modal-row row">
+						<div class="modal-inner col-lg-10 offset-lg-1">
+							<div class="recepts row">
+								<div class="recepts-title col-lg-12">
+									<h4>Горячая блюда</h4>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+
+								<div class="recepts-title col-lg-12">
+									<h4>Суши</h4>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -270,7 +442,7 @@
 								<div class="recepts-title col-lg-12">
 									<h4>Суши</h4>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -278,7 +450,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -286,7 +458,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -294,56 +466,7 @@
 									капуста, перец, лук, чеснок,
 									кинза, фирменный соус, кунжут</p>
 								</div>
-								<div class="recepts-item col-lg-3">
-									<img src="img/bluda.jpg" alt="">
-									<h5>Вок с говядиной удон слим</h5>
-									<span>250руб/260гр</span>
-									<p>Говядина, морковь, китайская
-									капуста, перец, лук, чеснок,
-									кинза, фирменный соус, кунжут</p>
-								</div>
-
-								<div class="recepts-item col-lg-3">
-									<img src="img/bluda.jpg" alt="">
-									<h5>Вок с говядиной удон слим</h5>
-									<span>250руб/260гр</span>
-									<p>Говядина, морковь, китайская
-									капуста, перец, лук, чеснок,
-									кинза, фирменный соус, кунжут</p>
-								</div>
-								<div class="recepts-item col-lg-3">
-									<img src="img/bluda.jpg" alt="">
-									<h5>Вок с говядиной удон слим</h5>
-									<span>250руб/260гр</span>
-									<p>Говядина, морковь, китайская
-									капуста, перец, лук, чеснок,
-									кинза, фирменный соус, кунжут</p>
-								</div>
-								<div class="recepts-item col-lg-3">
-									<img src="img/bluda.jpg" alt="">
-									<h5>Вок с говядиной удон слим</h5>
-									<span>250руб/260гр</span>
-									<p>Говядина, морковь, китайская
-									капуста, перец, лук, чеснок,
-									кинза, фирменный соус, кунжут</p>
-								</div>
-								<div class="recepts-item col-lg-3">
-									<img src="img/bluda.jpg" alt="">
-									<h5>Вок с говядиной удон слим</h5>
-									<span>250руб/260гр</span>
-									<p>Говядина, морковь, китайская
-									капуста, перец, лук, чеснок,
-									кинза, фирменный соус, кунжут</p>
-								</div>
-								<div class="recepts-item col-lg-6">
-									<img src="img/bluda.jpg" alt="">
-									<h5>Вок с говядиной удон слим</h5>
-									<span>250руб/260гр</span>
-									<p>Говядина, морковь, китайская
-									капуста, перец, лук, чеснок,
-									кинза, фирменный соус, кунжут</p>
-								</div>
-								<div class="recepts-item col-lg-6">
+								<div class="recepts-item col-lg-4">
 									<img src="img/bluda.jpg" alt="">
 									<h5>Вок с говядиной удон слим</h5>
 									<span>250руб/260гр</span>
@@ -352,53 +475,63 @@
 									кинза, фирменный соус, кунжут</p>
 								</div>
 
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
+								<div class="recepts-item col-lg-4">
+									<img src="img/bluda.jpg" alt="">
+									<h5>Вок с говядиной удон слим</h5>
+									<span>250руб/260гр</span>
+									<p>Говядина, морковь, китайская
+									капуста, перец, лук, чеснок,
+									кинза, фирменный соус, кунжут</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					</div>					
 				</div>
-
-				<div class="twree col-lg-4">
-					<img src="img/logo.png" alt="">
-					<div class="adres">
-						<h2>Как нас найти</h2>
-						<div class="cart">
-						<style type="text/css">
-						.ymaps-layers-pane {
-							filter: brightness(50%);
-							-ms-filter: brightness(50%);
-							-webkit-filter: brightness(50%);
-							-moz-filter: brightness(50%);   
-							-o-filter: brightness(50%);  
-						}
-						</style>
-						
-						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A509df45b6f5659d5458062a7a3b7d448b7828b3ed0a9ccc76fd41df41d005bb7&amp;source=constructor"  frameborder="0"></iframe>
-						</div>
-						<p>Посёлок Отрадное,<br>
-						ул. Пятницкая, д.12 <br>
-						<a href="tel:+7 965 965-42-47">+7 (901) 766-84-74</a></p>
-					</div>
-				</div>
 			</div>
 		</div>
 	</main>
+
 	<footer>
     		<div class="container">	
     			<p>Сайт разработал <a href="https://asadul-goba.github.io/Amir_Potfolio/">Amir Galimyanov</a></p>
     		</div>		
     </footer >
-    	<sccript>
-			$(document).ready(function(){
-				$('.close').on('click', function(event) {
-					event.preventDefault();
-					$('.modal').hide() 
-				});	
-			}	
-		</script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="js/app.js"></script>
-
 </body>
 </html>

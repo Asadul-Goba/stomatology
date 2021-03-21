@@ -1,3 +1,11 @@
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+body {
+  height: 5rem;
+}
 main {
   padding: 2rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/main.jpg) top no-repeat;
@@ -48,17 +56,15 @@ main .contacts i {
   margin: 0 0.3rem;
   font-size: 1.9rem;
 }
-main .menu {
+main .second-column {
   text-align: center;
 }
-main .menu-button {
+main .second-column .menu-button {
   padding: 0;
   border: none;
   font: inherit;
   color: inherit;
   background-color: transparent;
-}
-main .menu-button {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   margin: 0 auto;
@@ -68,24 +74,26 @@ main .menu-button {
   margin-top: 2rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/seti.png) top no-repeat;
 }
-main .menu-button h3 {
+main .second-column .menu-button h3 {
   font-size: 2rem;
   line-height: 2rem;
 }
-main .menu .blud {
+main .second-column .hot-meals {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/bluda.jpg) center no-repeat;
   background-size: cover;
+  padding: 1rem;
 }
-main .menu .souse {
+main .second-column .sauces {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/souce.jpg) center no-repeat;
   background-size: cover;
 }
-main .menu .modal {
+main .modal {
+  text-align: center;
   width: auto;
   border: none;
   padding: 0;
 }
-main .menu .modal .close {
+main .modal .close {
   position: absolute;
   top: -1rem;
   right: 6rem;
@@ -97,56 +105,52 @@ main .menu .modal .close {
   text-align: center;
   position: fixed;
 }
-main .menu .modal-inner {
-  width: auto;
-  border: none;
-  padding: 0;
-}
-main .menu .recepts {
+main .recepts {
+  box-shadow: 1rem 1rem 3rem 3rem rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   margin: 3rem 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/modal-bg.png) center no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/modal-bg.png) center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-main .menu .recepts-title {
+main .recepts-title {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
-main .menu .recepts-title h4 {
+main .recepts-title h4 {
   font-size: 2.8rem;
 }
-main .menu .recepts-item {
+main .recepts-item {
   margin-bottom: 2rem;
   background-repeat: 1rem;
   text-align: center;
 }
-main .menu .recepts-item h5 {
+main .recepts-item h5 {
   font-size: 30px	;
 }
-main .menu .recepts-item span {
+main .recepts-item span {
   font-size: 24px;
   color: #FF561B;
   font-weight: bold;
 }
-main .menu .recepts-item img {
+main .recepts-item img {
   border-radius: 1rem;
-  width: 15rem;
+  width: 19rem;
 }
-main .twree {
+main .third-column {
   text-align: center;
 }
-main .twree img {
+main .third-column img {
   padding: 0.5rem 0 1rem 0;
   width: 16rem;
 }
-main .twree .adres h2 {
+main .third-column .adres h2 {
   margin-bottom: 1.2rem;
 }
-main .twree .adres .cart {
+main .third-column .adres .cart {
   margin: 0 auto;
 }
-main .twree .adres .cart iframe {
+main .third-column .adres .cart iframe {
   width: 335px;
   height: 240px;
   filter: brightness(87%);
@@ -155,14 +159,14 @@ main .twree .adres .cart iframe {
   -moz-filter: brightness(87%);
   -o-filter: brightness(87%);
 }
-main .twree .adres p {
+main .third-column .adres p {
   font-size: 1.4rem;
   font-weight: 600;
 }
-main .twree .adres p a {
+main .third-column .adres p a {
   color: #EB691B;
 }
-main .twree .adres p a:hover {
+main .third-column .adres p a:hover {
   color: #EB691B;
 }
 footer {
@@ -180,6 +184,12 @@ footer p {
 footer p a {
   color: #EB691B;
   text-decoration: none;
+}
+@media (min-width: 1400px) {
+  main {
+    padding-top: 7rem;
+    min-height: 60rem;
+  }
 }
 @media (max-width: 726px) {
   main {
