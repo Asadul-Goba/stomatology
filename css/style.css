@@ -52,6 +52,9 @@ main .contacts {
   text-align: center;
   padding-top: 2.19rem;
 }
+main .contacts a {
+  color: white ;
+}
 main .contacts i {
   margin: 0 0.3rem;
   font-size: 1.9rem;
@@ -230,7 +233,23 @@ footer p a {
   }
 }
 @media (max-width: 576px) {
-  background-size: contain;
+  main .modal .recepts {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/modal-bg.png) center no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  main .modal .close {
+    position: absolute;
+    top: -1rem;
+    right: 1rem !important;
+    border: none;
+    width: 3rem;
+    font-size: 4rem;
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    position: fixed;
+  }
 }
 @media (max-width: 400px) {
   main .logo img {
