@@ -235,9 +235,7 @@ footer p a {
 }
 @media (max-width: 576px) {
   main .modal .recepts {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/modal-bg.png) center no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   }
   main .modal .close {
     position: absolute;
