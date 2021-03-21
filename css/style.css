@@ -150,7 +150,7 @@ main .recepts-item span {
 main .recepts-item img {
   border-radius: 1rem;
   width: 19rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 main .third-column {
   text-align: center;
@@ -183,6 +183,27 @@ main .third-column .adres p a {
 }
 main .third-column .adres p a:hover {
   color: #EB691B;
+}
+.recepter h4 {
+  margin-top: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.line {
+  padding: 0 7rem ;
+  display: inline-block;
+  font-size: 30px;
+  border-bottom: 1px solid #D6D8D8;
+  height: 3rem;
+}
+.line p {
+  float: left;
+}
+.line span {
+  float: right;
+}
+.bottom-line {
+  margin-bottom: 3rem;
 }
 footer {
   background-color: #272A32;
