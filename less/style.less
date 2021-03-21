@@ -51,7 +51,7 @@ main{
 			}	
 		}
 			button:hover{
-				background-color: #EB561B;
+				background-color: #B12F00;
 			}
 	}	
 	.contacts{
@@ -79,6 +79,7 @@ main{
 
 	.second-column{
 		text-align: center;
+
 		.menu-button{
 			padding: 0;
   			border: none;
@@ -93,19 +94,32 @@ main{
 			border-radius: 1rem;
 			margin-top: 2rem;
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)),url(../img/seti.png) top no-repeat;
+
 			h3{
 				font-size: 2rem;
 				line-height: 2rem;
 			}
+		}
+		.menu-button:hover{
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/seti.png) top no-repeat;
+		
 		}
 		.hot-meals{
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)),url(../img/bluda.jpg) center no-repeat;
 			background-size: cover;
 			padding: 1rem;	
 		}
+		.hot-meals:hover{
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../img/bluda.jpg) center no-repeat;
+		background-size: cover;
+		}
 		.sauces{
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)),url(../img/souce.jpg) center no-repeat;
 			background-size: cover;
+		}
+		.sauces:hover{
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../img/souce.jpg) center no-repeat;
+		background-size: cover;
 		}
 	}
 	
@@ -281,6 +295,9 @@ footer{
 		}
 		
 	}	
+}
+@media (max-width:576px) {
+	background-size: contain;
 }
 @media(max-width:400px){
 	main{
