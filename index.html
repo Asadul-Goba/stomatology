@@ -431,12 +431,28 @@
     		</div>		
     </footer >
     <script>
-    	$(function(){
-
-  $("img.lazyImg").lazyload({
-       effect: "fadeIn"
-  });
-});
+    	(function() {
+  var elements = document.querySelectorAll('img[data-src]');
+  var index = 0;
+  var lazyLoad = function() {  
+  if(index >= elements.length) return;
+  var item = elements[index];  
+  if((this.scrollY + this.innerHeight) > item.offsetTop) {  
+  var src = item.getAttribute("data-src");
+  item.src = src;
+  item.addEventListener('load', function() {
+  item.removeAttribute('data-src');  
+  });  
+  index++;
+  lazyLoad();
+  }
+  };
+  var init = function() {
+  window.addEventListener('scroll', lazyLoad);
+  lazyLoad();
+  };
+  return init();
+})();
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="jquery.lazyload.min.js" type="text/javascript"></script>
